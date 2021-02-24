@@ -6,19 +6,37 @@
   <body>
     <p>Here is a randomized password for you to use.</p>
 
-    <form id="form" onsubmit="return false;">
+    <!--  new field + submit button
+    <form id="form" onsubmit="">
       <input type="text" id="userInput" placeholder="first name"/>
       <input type="submit" onclick="othername();" />
     </form>
     <p id="testtest"></p>
   </br>
+    -->
 
-    <!-- old code -->
-    <button onclick="generate()">Click me!</button>
-    <p id="demo"></p>
+ 
+    <h2 class="form-signin-heading">Random Password Generator</h2>
+    <input id='firstName' type="text" class="input-block-level" placeholder="First Name">
+    <input id='lastName' type="text" class="input-block-level" placeholder="Last Name">
+    <input id='favoriteFood' type="text" class="input-block-level" placeholder="Favorite Food">
+    <input id='favoriteColor' type="text" class="input-block-level" placeholder="Favorite Color">
+    <input id='number' type="text" class="input-block-level" placeholder="Enter a Number">
+
+    <button class="btn btn-large btn-primary" onclick='generatePassword()' type="submit">Generate</button>
+     
+  
+  
+
+  </br>
+  </br> 
+
+    <!-- old code; click me button fires generate() function -->
+  
+    <h2 id="randompassword"></h2>
+    
 
     <script src="simplepassgen.js"></script>
-
   </body>
 </html>
 
